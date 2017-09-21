@@ -1,0 +1,24 @@
+{
+  "provider" : {
+    "name" : "scala_pact_Provider"
+  },
+  "consumer" : {
+    "name" : "scala_pact_Consumer"
+  },
+  "interactions" : [
+    {
+      "request" : {
+        "method" : "GET",
+        "path" : "/user"
+      },
+      "description" : "Fetching User",
+      "response" : {
+        "status" : 200,
+        "body" : {
+          "id" : 1,
+          "name" : "Jon"
+        }
+      }
+    }
+  ]
+}
